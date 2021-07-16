@@ -1,0 +1,39 @@
+body {
+  background: teal;
+}
+
+body *,
+html * {
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%);
+}
+
+.search-box input {
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  color: transparent;
+  font-size: 1em;
+  line-height: 25px;
+}
+
+.search-box input:hover {
+  cursor: pointer;
+}
+
+.search-box input:hover:focus {
+  cursor: text;
+}
+
+.search-box input:hover + span {
+  background: rgba (255, 255, 255, 0.2);
+}
